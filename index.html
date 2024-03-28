@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(3, auto);
+      flex-direction: column;
+      width: 748px;
+      height: 748px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .red {
+      background-color: #E72F24;
+      width: 320px;
+      height: 414px;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .one {
+      width: 419px;
+      height: 414px;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    .two {
+      width: 320px;
+      height: 296px;
+      grid-column-start: 1;
+    }
+
+    .three {
+      width: 360px;
+      height: 296px;
+    }
+    .four {
+      width: 320px;
+      height: 20px;
+      grid-column-start: 1;
+    }
+    .five {
+      width: 50px;
+      height: 185px;
+      grid-column-start: 3;
+      grid-row-start: 2;
+      grid-row-end: -1;
+      align-self: flex-end;
+    }
+
+    .blue {
+      background-color: #004592;
+      width: 50px;
+      height: 130px;
+      grid-column-start: 3;
+      grid-row-start: 2;
+      align-self: flex-start;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      width: 198px;
+      height: 20px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      justify-self: flex-start;
+    }
+
+    .black {
+      background-color: #232629;
+      width: 153px;
+      height: 20px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      justify-self: flex-end;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="white one"></div>
+    <div class="white two"></div>
+    <div class="white three"></div>
+    <div class="white four"></div>
+    <div class="white five"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
+</body>
+
+</html>
